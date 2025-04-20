@@ -6,6 +6,13 @@
     <title>electron hello world application</title>
 </head>
 <body>
+    <button id="close_btn">close</button>
     <h1>this is an electron app</h1>
 </body>
+<script>
+    let btn_close = document.getElementById('close_btn')
+    btn_close.addEventListener("click",()=>{
+        window.close()
+    })
+</script>
 </html>
